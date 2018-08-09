@@ -1,0 +1,19 @@
+th {
+    color: white;
+}
+
+.thead-blue {
+    background-color: #198ce6;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    opacity: 0.5;
+}
