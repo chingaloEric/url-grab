@@ -2,8 +2,12 @@ th {
     color: white;
 }
 
-.thead-blue {
+.table-head {
     background-color: #198ce6;
+}
+
+.fixed-inputs {
+    padding: 19px;
 }
 
 input {

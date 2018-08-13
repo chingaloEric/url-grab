@@ -1,45 +1,45 @@
 <div class="row">
     <div class="col-md-12">
         <table class="table">
-            <thead class="thead-blue">
+            <thead class="table-head">
                 <tr>
                     <th scope="col">Orgunit</th>
                     <th scope="col">Period</th>
                     <th scope="col">Intervention</th>
                     <th scope="col">Bottleneck</th>
-                    <th scope="col">indicator</th>
+                    <th scope="col">Indicator</th>
                     <th scope="col">Root cause</th>
                     <th scope="col">Solution</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let urlElement of url">
-                    <td> {{ urlElement.orgUnit }}</td>
-                    <td>{{ urlElement.period }}</td>
-                    <td>{{ urlElement.intervention }}</td>
+                    <td class="fixed-inputs"> {{ urlElement.orgUnit }}</td>
+                    <td class="fixed-inputs">{{ urlElement.period }}</td>
+                    <td class="fixed-inputs">{{ urlElement.intervention }}</td>
                     <td>
 
-                        <select value="Bottleneck">
-                            <option value="Bottleneck">Bottleneck</option>
+                        <select value="" class="custom-select toggle-dropdown">
+                            <option value="Bottleneck">Bottleneck<option>
                             <option value="opt1">Opt1</option>
                             <option value="opt2">Opt2</option>
                         </select>
                     </td>
                     <td>
-                        <select value="Indicators">
+                        <select value="" class="custom-select">
                             <option value="Indicators">Indicators</option>
                             <option value="opt1">Opt1</option>
                             <option value="opt2">Opt2</option>
                         </select>
                     </td>
-                    <td><input type="text" placeholder="Enter root cause"></td>
-                    <td><input type="text" placeholder="Enter Solution"></td>
+                    <td><input type="text" placeholder="Enter root cause" class="form-control"></td>
+                    <td><input type="text" placeholder="Enter Solution" class="form-control"></td>
                 </tr>
 
             </tbody>
         </table>
         <div class="float-right">
-            <button (click)="addRow()">Add new</button>
+            <button (click)="addRow()" class="btn">Add new</button>
         </div>
     </div>
 </div>
